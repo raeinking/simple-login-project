@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./pexels-michal-hajtas-4401545.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    background-color:rgba(204, 79, 79, 0.411);
+    justify-content: space-around;
+    height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    align-items:center;
+}
+
+.logo{
+    color:rgb(248, 247, 247);
+    font-size:20px;
+    letter-spacing: 3px;
+}
+
+.lo {
+    justify-content:space-around;
+    display: flex;
+    list-style: none;
+    min-width: 35%;
+
+}
+
+.lo li {
+    cursor:pointer;
+    color:rgb(248, 247, 247);
+}
+
+.login {
+    display: flex;
+    background-color:rgba(0, 0, 0, 0.349);
+    position: absolute;
+    width:35%;
+    height: 20%;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    top :50%;
+    left :50%;
+    transform:translate(-50% ,-50%);
+}
+
+.sign-in {
+    position: absolute;
+    top :37.5%;
+    left :50%;
+    transform:translate(-50% ,-50%);
+    font-size:20px;
+    color: aliceblue;
+    background-color:rgba(0, 0, 0, 0.24);
+}
+
+.login input {
+    height:20%;
+    margin: 2px;
+    border-radius:25px;
+    background-color: black;
+    color:rgb(248, 247, 247);
+    outline: none;
+    text-align: center;
+
+}
+.sub {
+    position:relative;
+    width: 100px;
+    top: 10%;
+    left:50%;
+    transform:translate(-50% ,-50%);
+}
+
+.nav-bar div{
+    display: none;
+}
+form :hover{
+    height:20%;
+    margin: 2px;
+    border-radius:25px;
+    background-color: rgba(0, 255, 255, 0.466);
+    color:rgb(255, 255, 255);
+    outline: none;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width : 450px){
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url(./pexels-michal-hajtas-4401545.jpg);
+        background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+    }
+    nav {
+        display: flex;
+        background-color:rgba(204, 79, 79, 0.411);
+        justify-content: space-around;
+        min-height: 7vh;
+        font-family: 'Poppins', sans-serif;
+        align-items:center;
+    }
+    .logo{
+        color:rgb(248, 247, 247);
+        font-size:20px;
+        letter-spacing: 3px;
+    }
+
+    .nav-bar div{
+        background-color: aliceblue;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width:20px;
+        height: 2px;
+        margin: 5px;
+    }
+    .lo{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(204, 79, 79, 0.411);
+        height: 92vh;
+        width: 1%;
+        display:flex;
+        top: 8vh;
+        right:0vw;
+        align-items:center;
+        z-index: 2;
+        display: none;        
+    }
+
+    ul.open{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color:rgba(204, 79, 79, 0.411);
+        height: 92vh;
+        width: 1%;
+        display:flex;
+        top: 8vh;
+        right:0vw;
+        align-items:center;
+        z-index: 1;
+    }
+
+    .login {
+        display: flex;
+        background-color:rgba(0, 0, 0, 0.349);
+        position: absolute;
+        width:35%;
+        height: 20%;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around;
+        top :50%;
+        left :50%;
+        transform:translate(-50% ,-50%);
+    }
+}
+
